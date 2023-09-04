@@ -30,7 +30,7 @@ const Navigation = () => {
                 href={link.href}
                 key={link.name}
                 scroll={false}
-              >
+                >
                 {link.name}
                 {isActive && (
                   <motion.div
@@ -40,7 +40,7 @@ const Navigation = () => {
                   />
                 )}
               </Link>
-            )
+            );
           })}
         </>
       </nav>
