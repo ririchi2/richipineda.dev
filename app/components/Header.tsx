@@ -1,5 +1,6 @@
 import Link from "next/link";
 import DarkModeToggle from "./DarkModeToggle";
+import Navigation from "./Navigation";
 
 
 const Header = () => {

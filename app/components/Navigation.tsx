@@ -1,5 +1,8 @@
+"use client"
+import { isActiveLink } from "@/lib/utils";
 import { AnimateSharedLayout, motion } from "framer-motion";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const links: { name: string; href: string }[] = [
   {
@@ -23,7 +26,7 @@ const Navigation = (): JSX.Element => {
     <AnimateSharedLayout>
       <nav className="flex">
         {links.map(({ name, href }) => (
-          <Link key={name} href={href}>
+          <Link key={name} href={href} scroll={false}>
             <a className="mr-6 sm:mr-8 flex flex-col relative">
               {name}
               {isActiveLink(href, router.pathname) && (
