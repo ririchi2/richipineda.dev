@@ -17,17 +17,17 @@ const Header = () => {
          "
     >
       <Link scroll={false} href="/">
-        <a>
-          <span className="show sm:hide">JW</span>
-          <span className="hide sm:show">James Wallis</span>
-        </a>
+
+        <span className="show sm:hide">ririchi2</span>
+        <span className="hide sm:show">Ricardo Pineda</span>
+
       </Link>
       <div className="flex flex-row items-center">
         <Navigation />
         <DarkModeToggle />
       </div>
     </header>
-  )
+  );
 }
 
 export default Header;

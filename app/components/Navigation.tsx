@@ -1,8 +1,8 @@
 "use client"
 import { isActiveLink } from "@/lib/utils";
-import { AnimateSharedLayout, motion } from "framer-motion";
+import { LayoutGroup, motion } from "framer-motion";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 
 const links: { name: string; href: string }[] = [
   {
@@ -10,38 +10,61 @@ const links: { name: string; href: string }[] = [
     href: '/',
   },
   {
-    name: 'Blog',
-    href: '/blog',
-  },
-  {
     name: 'Portfolio',
     href: '/portfolio',
   },
 ]
 
-const Navigation = (): JSX.Element => {
-  const router = useRouter()
+const Navigation = () => {
+  const pathname = usePathname()
 
   return (
-    <AnimateSharedLayout>
+    <LayoutGroup>
       <nav className="flex">
-        {links.map(({ name, href }) => (
-          <Link key={name} href={href} scroll={false}>
-            <a className="mr-6 sm:mr-8 flex flex-col relative">
-              {name}
-              {isActiveLink(href, router.pathname) && (
-                <motion.div
-                  layoutId="navigation-underline"
-                  className="navigation-underline"
-                  animate
-                />
-              )}
-            </a>
-          </Link>
-        ))}
+        <>
+          {links.map((link) => {
+            const isActive = pathname === link.href
+
+            return (
+              <Link
+                className="mr-6 sm:mr-8 flex flex-col relative"
+                href={link.href}
+                key={link.name}
+                scroll={false}
+              >
+                {link.name}
+                {isActive && (
+                  <motion.div
+                    animate
+                    className="navigation-underline"
+                    layoutId="navigation-underline"
+                  />
+                )}
+              </Link>
+            )
+          })}
+        </>
+        {/* {links.map(({ name, href }) => (
+          // (<Link
+          //   key={name}
+          //   href={href}
+          //   scroll={false}
+          //   className="mr-6 sm:mr-8 flex flex-col relative"
+          // >
+          //   {name}
+          //   {isActiveLink(href, pathname) && (
+          //     <motion.div
+          //       layoutId="navigation-underline"
+          //       className="navigation-underline"
+          //       animate
+          //     />
+          //   )}
+
+          // </Link>)
+        ))} */}
       </nav>
-    </AnimateSharedLayout>
-  )
+    </LayoutGroup>
+  );
 }
 
 export default Navigation

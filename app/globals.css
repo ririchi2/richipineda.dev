@@ -2,26 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@layer components {
+    .highlight__panel {
+        @apply hidden;
+    }
+    .prose img {
+        @apply mx-auto shadow-md rounded;
+    }
+    .prose figure, .prose figcaption {
+        @apply text-center italic;
+        margin-top: -1rem;
+    }
+    .prose figure {
+        @apply my-6;
+    }
+    .prose figure br {
+        @apply hidden;
+    }
+
+    .navigation-underline {
+        @apply w-full border border-yellow-300;
+    }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+@layer utilities {
+    @variants responsive {
+        .hide {
+            display: none;
+            visibility: hidden;
+        }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
+        .show {
+            display: inline;
+            visibility: visible;
+        }
+    }
+}
