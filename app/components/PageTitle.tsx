@@ -1,11 +1,12 @@
+import SocialIcons from "./SocialIcons"
 
 interface IProps {
   title: string
   subtitle?: string
-
+  icons?: boolean
 }
 
-const PageTitle = ({ title, subtitle }: IProps) => (
+const PageTitle = ({ title, subtitle, icons = true }: IProps) => (
   <div className="mt-14 lg:mt-32 font-light w-full text-black dark:text-white">
     <h1 className={`text-4xl sm:text-5xl lg:text-6xl mb-2`}>
       {title}
@@ -15,7 +16,7 @@ const PageTitle = ({ title, subtitle }: IProps) => (
         {subtitle}
       </p>
     )}
-    {/* {icons && <SocialIcons />} */}
+    {icons && <SocialIcons />}
   </div>
 )
 
