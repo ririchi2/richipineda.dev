@@ -1,5 +1,4 @@
 "use client"
-import { isActiveLink } from "@/lib/utils";
 import { LayoutGroup, motion } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -44,24 +43,6 @@ const Navigation = () => {
             )
           })}
         </>
-        {/* {links.map(({ name, href }) => (
-          // (<Link
-          //   key={name}
-          //   href={href}
-          //   scroll={false}
-          //   className="mr-6 sm:mr-8 flex flex-col relative"
-          // >
-          //   {name}
-          //   {isActiveLink(href, pathname) && (
-          //     <motion.div
-          //       layoutId="navigation-underline"
-          //       className="navigation-underline"
-          //       animate
-          //     />
-          //   )}
-
-          // </Link>)
-        ))} */}
       </nav>
     </LayoutGroup>
   );

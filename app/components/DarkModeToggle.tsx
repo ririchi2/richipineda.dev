@@ -13,6 +13,8 @@ const DarkModeToggle = () => {
 
     const toggleMode = (): void => {
         localStorage.theme = getThemeString(!isDarkMode)
+        console.log(localStorage.theme);
+
         if (localStorage.theme === 'dark') {
             document.documentElement.classList.add('dark')
         } else {
@@ -25,8 +27,9 @@ const DarkModeToggle = () => {
         setDarkMode(isDark())
     }, [])
 
-    const darkModeActive: boolean =
-    typeof window && document.documentElement.classList.contains('dark')
+    const darkModeActive: boolean = document.documentElement.classList.contains('dark');
+
+
     return (
         <AnimatePresence mode="wait" initial={false}>
             <motion.button
