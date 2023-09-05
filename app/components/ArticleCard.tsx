@@ -29,7 +29,7 @@ const ArticleCard = ({ title = '', description = '', portfolio = false, coverIma
           </p>
         )}
 
-        <p className="text-base mt-2">description</p>
+        <p className="text-base mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo earum omnis pariatur voluptate dolorem, est tenetur. Pariatur nesciunt, perspiciatis quibusdam, animi excepturi nemo repudiandae vel, neque optio laboriosam quisquam eaque!</p>
         <p className="text-base mt-2 underline hover:text-gray-800 dark:hover:text-gray-100 transition-colors">
           Read more
         </p>
