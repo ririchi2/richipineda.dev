@@ -25,6 +25,10 @@ export default function Home() {
           I also go to the gym, enjoy some nighttime gaming and spending time outdoors.
         </p>
       </Section>
+      <Section>
+      <h2 className="text-3xl md:text-4xl mb-4 text-black dark:text-white">Featured projects</h2>
+
+      </Section>
     </Layout>
   )
 }
