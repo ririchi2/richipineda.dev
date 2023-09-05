@@ -16,6 +16,7 @@ const ArticleCard = ({ title = '', description = '', portfolio = false, coverIma
         ${coverImage ? 'sm:w-1/2 lg:w-1/2 xl:w-3/5' : 'sm:w-4/5'}`}
       >
         <h3 className="text-2xl text-gray-600 dark:text-gray-100">title</h3>
+
         {!portfolio && (
           <p className="text-sm my-1">
             {/* <span>{moment(date).format('Do MMMM YYYY')}</span> */}<span>date</span>
