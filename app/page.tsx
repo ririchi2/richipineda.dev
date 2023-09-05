@@ -18,7 +18,7 @@ export default function Home() {
         <p className="my-2">
           I spend most of my time as a frontend developer, but I also have experience with backend.
           Sometimes I use Node.js, Docker and Java and
-          I&apos;m currently trying some wizardry in TypeScript 🪄.
+          I&apos;m currently learning some wizardry in TypeScript 🪄.
         </p>
         <p className="my-2">
           Outside of work I spend my time learning new techs as the industry never stops evolving,
