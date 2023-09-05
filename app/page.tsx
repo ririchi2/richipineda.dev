@@ -2,6 +2,8 @@ import Image from 'next/image'
 import PageTitle from './components/PageTitle'
 import Layout from './components/Layout'
 import Section from './components/Section'
+import { projects } from './data/projects'
+import ArticleCard from './components/ArticleCard'
 
 
 const title = "Hello, I'm Ricardo"
@@ -27,7 +29,15 @@ export default function Home() {
       </Section>
       <Section>
       <h2 className="text-3xl md:text-4xl mb-4 text-black dark:text-white">Featured projects</h2>
-
+      {projects.map((project, i) => (
+          <ArticleCard
+            key={i}
+            title={project.title}
+            description={project.description}
+            portfolio={false}
+            href={project.href}
+          />
+        ))}
       </Section>
     </Layout>
   )
