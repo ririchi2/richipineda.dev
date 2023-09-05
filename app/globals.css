@@ -26,7 +26,6 @@
 }
 
 @layer utilities {
-    @variants responsive {
         .hide {
             display: none;
             visibility: hidden;
@@ -36,5 +35,4 @@
             display: inline;
             visibility: visible;
         }
-    }
 }
