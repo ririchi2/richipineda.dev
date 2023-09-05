@@ -22,7 +22,7 @@ export default function Home() {
         </p>
         <p className="my-2">
           Outside of work I spend my time learning new techs as the industry never stops evolving,
-          I also go to the gym, enjoy some nighttime gaming and like to spend time outdoors.
+          I also go to the gym, enjoy some nighttime gaming and spending time outdoors.
         </p>
       </Section>
     </Layout>
