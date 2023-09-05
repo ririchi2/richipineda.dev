@@ -27,7 +27,7 @@ const DarkModeToggle = () => {
         setDarkMode(isDark())
     }, [])
 
-    const darkModeActive: boolean = document.documentElement.classList.contains('dark');
+    // const darkModeActive: boolean = document.documentElement.classList.contains('dark');
 
 
     return (
@@ -35,13 +35,13 @@ const DarkModeToggle = () => {
             <motion.button
                 className="text-2xl sm:text-3xl text-yellow-400 dark:text-yellow-300 focus:outline-none"
                 onClick={() => toggleMode()}
-                key={darkModeActive ? 'dark-icon' : 'light-icon'}
+                key={isDarkMode ? 'dark-icon' : 'light-icon'}
                 initial={{ y: -20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 exit={{ y: 20, opacity: 0 }}
                 transition={{ duration: 0.2 }}
             >
-                {darkModeActive ? '🌙' : '🌤️'}
+                {isDarkMode ? '🌙' : '🌤️'}
             </motion.button>
         </AnimatePresence>
     )
