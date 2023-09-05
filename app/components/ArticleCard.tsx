@@ -5,10 +5,10 @@ interface IProps {
   description: string,
   portfolio?: boolean,
   coverImage?: string,
-
+  icon?: boolean,
 }
 
-const ArticleCard = ({ title = '', description = '', portfolio = false, coverImage = '', }: IProps) => {
+const ArticleCard = ({ title = '', description = '', portfolio = false, coverImage = '', icon = true }: IProps) => {
 
   return (
     <div className="mb-14 flex flex-col sm:flex-row w-full">
@@ -36,6 +36,9 @@ const ArticleCard = ({ title = '', description = '', portfolio = false, coverIma
           <img src={coverImage} className="w-full rounded-sm" alt="" />
         </div>
       )}
+      <div className="w-full sm:w-1/2 lg:w-1/2 xl:w-2/5 mt-4 sm:mt-0 sm:ml-4 flex justify-end">
+        <p>icons</p>
+      </div>
     </div>
   )
 }
