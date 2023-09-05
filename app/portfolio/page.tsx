@@ -1,3 +1,4 @@
+import ArticleCard from "../components/ArticleCard";
 import Layout from "../components/Layout";
 import PageTitle from "../components/PageTitle";
 
@@ -10,6 +11,7 @@ export default function Portfolio() {
   return (
     <Layout>
       <PageTitle title={title} subtitle={subtitle} />
+      <ArticleCard title={""} description={""} portfolio={true}/>
     </Layout>
   )
 }
