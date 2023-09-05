@@ -3,6 +3,7 @@ export const projects:
     title: string,
     description: string,
     href: string,
+    tags?: string[],
     coverImage?: string,
     icon?: boolean,
     portfolio?: boolean,

@@ -1,5 +1,7 @@
 {
   "name": "richipineda.dev",
+  "author": "@ririchi2",
+  "description": "richipineda.dev Personal Website",
   "version": "0.1.0",
   "private": true,
   "scripts": {
