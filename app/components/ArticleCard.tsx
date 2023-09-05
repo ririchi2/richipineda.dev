@@ -14,6 +14,7 @@ const ArticleCard = ({ title = '', description = '', portfolio = false, coverIma
 
   return (
     <div className="mb-14 flex flex-row sm:flex-row w-full">
+      {/* conditional in class for flex-col when coverImages are true */}
       <Link href={""} className={`w-full text-gray-500 dark:text-gray-300
         ${coverImage ? 'sm:w-1/2 lg:w-1/2 xl:w-3/5' : 'sm:w-4/5'}`}
       >
