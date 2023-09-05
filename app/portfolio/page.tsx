@@ -13,7 +13,7 @@ export default function Portfolio() {
     <Layout>
       <PageTitle title={title} subtitle={subtitle} />
       <Section linebreak >
-        <ArticleCard title={""} description={""} portfolio={true} />
+        <ArticleCard title={""} description={""} portfolio={true} url={""} />
       </Section>
     </Layout>
   )

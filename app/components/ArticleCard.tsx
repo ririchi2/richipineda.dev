@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { FaGithub } from "react-icons/fa"
 
 interface IProps {
   title: string,
@@ -6,6 +7,7 @@ interface IProps {
   portfolio?: boolean,
   coverImage?: string,
   icon?: boolean,
+  url: string,
 }
 
 const ArticleCard = ({ title = '', description = '', portfolio = false, coverImage = '', icon = true }: IProps) => {
@@ -31,13 +33,26 @@ const ArticleCard = ({ title = '', description = '', portfolio = false, coverIma
           Read more
         </p>
       </Link>
+
       {coverImage && (
         <div className="w-full sm:w-1/2 lg:w-1/2 xl:w-2/5 mt-4 sm:mt-0 sm:ml-4 flex items-center justify-center">
           <img src={coverImage} className="w-full rounded-sm" alt="" />
         </div>
       )}
+
       <div className="w-full sm:w-1/2 lg:w-1/2 xl:w-2/5 mt-4 sm:mt-0 sm:ml-4 flex justify-end">
-        <p>icons</p>
+        <div className="flex flex-row text-2xl text-gray-500 dark:text-gray-300">
+          {/* map data here */}
+          <a
+            // key={href}
+            // href={href}
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            className={`hover:text-gray-800 dark:hover:text-white transition-colors`}
+          >
+            <FaGithub />
+          </a>
+        </div>
       </div>
     </div>
   )
