@@ -13,7 +13,7 @@ interface IProps {
 const ArticleCard = ({ title = '', description = '', portfolio = false, coverImage = '', icon = true }: IProps) => {
 
   return (
-    <div className="mb-14 flex flex-col sm:flex-row w-full">
+    <div className="mb-14 flex flex-row sm:flex-row w-full">
       <Link href={""} className={`w-full text-gray-500 dark:text-gray-300
         ${coverImage ? 'sm:w-1/2 lg:w-1/2 xl:w-3/5' : 'sm:w-4/5'}`}
       >
@@ -48,7 +48,7 @@ const ArticleCard = ({ title = '', description = '', portfolio = false, coverIma
             // href={href}
             target="_blank"
             rel="noopener noreferrer nofollow"
-            className={`hover:text-gray-800 dark:hover:text-white transition-colors`}
+            className={`hover:text-gray-800 dark:hover:text-white transition-colors mt-1`}
           >
             <FaGithub />
           </a>
