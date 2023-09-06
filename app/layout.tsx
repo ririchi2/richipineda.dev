@@ -7,7 +7,6 @@ import Head from 'next/head'
 import GoogleAnalytics from './components/GoogleAnalytics'
 import { Suspense } from 'react'
 import Analytics from './components/Analytics'
-import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -53,22 +52,13 @@ export default function RootLayout({
       <body className={`${inter.className} bg-white dark:bg-gray-800
         transition-colors duration-100 ease-linear`}
       >
+        <GoogleAnalytics />
         {/* <Suspense>
           <Analytics />
         </Suspense> */}
         <Header />
         {children}
         <Footer />
-        <Script src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`} />
-        <Script id="google-analytics">
-          {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'GA_MEASUREMENT_ID');
-        `}
-        </Script>
       </body>
     </html>
   )
