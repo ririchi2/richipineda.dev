@@ -48,10 +48,10 @@ export default function RootLayout({
   return (
     <html lang="en">
 
+      <GoogleAnalytics />
       <body className={`${inter.className} bg-white dark:bg-gray-800
         transition-colors duration-100 ease-linear`}
       >
-        <GoogleAnalytics />
         <Header />
         {children}
         <Footer />
