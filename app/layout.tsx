@@ -49,13 +49,12 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <Head>
+        <GoogleAnalytics />
+      </Head>
       <body className={`${inter.className} bg-white dark:bg-gray-800
         transition-colors duration-100 ease-linear`}
       >
-        <GoogleAnalytics />
-        {/* <Suspense>
-          <Analytics />
-        </Suspense> */}
         <Header />
         {children}
         <Footer />
