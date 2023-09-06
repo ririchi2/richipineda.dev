@@ -42,7 +42,7 @@ const ArticleCard = ({ title, description, href, portfolio = false, coverImage =
         </div>
       )}
 
-      <div className="w-full sm:w-1/2 lg:w-1/2 xl:w-2/5 mt-4 sm:mt-0 sm:ml-4 flex justify-end">
+      <div className=" sm:w-1/2 lg:w-1/2 xl:w-2/5 sm:mt-0 sm:ml-4 flex justify-end">
         <div className="flex flex-row text-2xl text-gray-500 dark:text-gray-300">
           <a
             key={href}
