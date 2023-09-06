@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import PageTitle from './components/PageTitle'
 import Layout from './components/Layout'
 import Section from './components/Section'
