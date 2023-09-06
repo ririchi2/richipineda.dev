@@ -1,34 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# richipineda.dev
+
+
+Welcome to my personal website! This project serves as a showcase of my work, skills, and interests. It's built using a combination of modern web technologies and frameworks.
+
+## Table of Contents
+
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Deployment](#deployment)
+
+
+## Features
+
+- **Modern Stack**: Utilizes a modern web stack, including Next.js, React, and TypeScript, for efficient and maintainable development.
+- **Responsive Design**: Ensures that the website is accessible and looks great on various devices and screen sizes.
+- **Animation**: Incorporates animations using the Framer Motion library to provide an engaging user experience.
+- **Icon Integration**: Includes a variety of icons using the React Icons library for visual appeal.
+- **Tailwind CSS**: Uses Tailwind CSS for rapid and efficient styling of web components.
+- **Analytics**: Integrates Vercel Analytics to gain insights into user behavior and improve the website.
 
 ## Getting Started
 
-First, run the development server:
+To get started with Patientor Backend, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+1. Clone the repository:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   ```shell
+   git clone https://github.com/your-username/patientor-backend.git
+   
+2. Install dependencies:
+   
+   ```shell
+   npm install
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+4. Start the development server:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   ```shell
+   npm run dev
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project uses [Vercel](https://vercel.com) for its deployment
