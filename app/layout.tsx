@@ -49,7 +49,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <Head>
+      <Head key={"google-analytics"}>
         <GoogleAnalytics />
       </Head>
       <body className={`${inter.className} bg-white dark:bg-gray-800
