@@ -19,7 +19,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  const GA_MEASUREMENT_ID = '';
 
   return (
     <html lang="en">
