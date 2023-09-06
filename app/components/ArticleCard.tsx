@@ -21,15 +21,15 @@ const ArticleCard = ({ title, description, href, tags, portfolio = false, coverI
       >
         <h3 className="text-2xl text-gray-600 dark:text-gray-100">{title}</h3>
 
-        {!portfolio && (
+        {portfolio && (
           <p className="text-sm my-1">
+            <span>{tags && tags.join(', ')}</span>
+            {/* {tags && tags.map((tag, i) => (
+              <span key={i} className="mr-3">{tag}</span>
+            ))} */}
             {/* <span>{moment(date).format('Do MMMM YYYY')}</span> */}
             {/* <span>date</span> */}
             {/* <span className="px-1">-</span> */}
-            {/* <span>{tags.join(', ')}</span> */}
-            {tags && tags.map((tag, i) => (
-              <span key={i} className="mr-3">{tag}</span>
-            ))}
           </p>
         )}
 
