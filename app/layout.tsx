@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Head from 'next/head'
+import GoogleAnalytics from './components/GoogleAnalytics'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,7 +18,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  const GA_MEASUREMENT_ID = 'G-N81B81BPMY'; // Paste your GTAG here
+  const GA_MEASUREMENT_ID = '';
 
   /*
   <!-- Google tag (gtag.js) -->
@@ -26,16 +27,12 @@ export default function RootLayout({
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-N81B81BPMY');
+  gtag('config', '');
 </script>
-  */
-
-  return (
-    <html lang="en">
+-
       <Head>
         <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`} />
         <script
-          // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
@@ -46,9 +43,15 @@ export default function RootLayout({
           }}
         />
       </Head>
+  */
+
+  return (
+    <html lang="en">
+
       <body className={`${inter.className} bg-white dark:bg-gray-800
         transition-colors duration-100 ease-linear`}
       >
+        <GoogleAnalytics />
         <Header />
         {children}
         <Footer />
