@@ -5,12 +5,13 @@ interface IProps {
   title: string,
   description: string,
   href: string,
+  tags?: string[],
   coverImage?: string,
   icon?: boolean,
   portfolio?: boolean,
 }
 
-const ArticleCard = ({ title, description, href, portfolio = false, coverImage = '', icon = true }: IProps) => {
+const ArticleCard = ({ title, description, href, tags, portfolio = false, coverImage = '', icon = true }: IProps) => {
 
   return (
     <div className="mb-14 flex flex-row sm:flex-row w-full">
@@ -26,7 +27,9 @@ const ArticleCard = ({ title, description, href, portfolio = false, coverImage =
             {/* <span>date</span> */}
             {/* <span className="px-1">-</span> */}
             {/* <span>{tags.join(', ')}</span> */}
-            <span>tags</span>
+            {tags && tags.map((tag, i) => (
+              <span key={i} className="mr-3">{tag}</span>
+            ))}
           </p>
         )}
 

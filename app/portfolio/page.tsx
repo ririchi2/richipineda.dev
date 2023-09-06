@@ -21,6 +21,7 @@ export default function Portfolio() {
             description={project.description}
             portfolio={true}
             href={project.href}
+            tags={project.tags}
           />
         ))}
       </Section>

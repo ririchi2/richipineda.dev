@@ -35,6 +35,7 @@ export default function Home() {
             description={project.description}
             portfolio={false}
             href={project.href}
+            tags={project.tags}
           />
         ))}
       </Section>
