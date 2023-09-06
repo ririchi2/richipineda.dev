@@ -33,4 +33,12 @@ export const projects:
       coverImage: '',
       href: 'https://github.com/ririchi2/markdown-editor',
     },
+    {
+      title: 'Podbuster Backend',
+      description: 'Podbuster is the backend component of the Podbuster project, a Node.js and Express-based application designed to manage and serve a podcast library',
+      coverImage: '',
+      href: 'https://github.com/fullstacktf/podcast-library-backend',
+    },
   ];
+
+
