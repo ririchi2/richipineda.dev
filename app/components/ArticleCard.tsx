@@ -16,7 +16,7 @@ const ArticleCard = ({ title, description, href, tags, portfolio = false, coverI
   return (
     <div className="mb-14 flex flex-row sm:flex-row w-full">
       {/* conditional in class for flex-col when coverImages are true */}
-      <Link href={""} className={`w-full text-gray-500 dark:text-gray-300
+      <Link href={href} className={`w-full text-gray-500 dark:text-gray-300
         ${coverImage ? 'sm:w-1/2 lg:w-1/2 xl:w-3/5' : 'sm:w-4/5'}`}
       >
         <h3 className="text-2xl text-gray-600 dark:text-gray-100">{title}</h3>
@@ -52,7 +52,7 @@ const ArticleCard = ({ title, description, href, tags, portfolio = false, coverI
             href={href}
             target="_blank"
             rel="noopener noreferrer nofollow"
-            className={`hover:text-gray-800 dark:hover:text-white transition-colors mt-1`}
+            className={`hover:text-gray-800 dark:hover:text-white transition-colors mt-1 h-fit`}
           >
             <FaGithub />
           </a>
