@@ -1,5 +1,5 @@
 export const pageview = (GA_MEASUREMENT_ID : string, url : string) => {
-  window.gtag("config", GA_MEASUREMENT_ID, {
+  window.gtag("event", "page_view", {
       page_path: url,
   });
 };
