@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 import GoogleAnalytics from './components/GoogleAnalytics'
 import { Suspense } from 'react'
 import GoogleAnalyticsEvent from './components/GoogleAnalyticsEvent'
+import { Analytics } from '@vercel/analytics/react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,11 +26,12 @@ export default function RootLayout({
       <body className={`${inter.className} bg-white dark:bg-gray-800
         transition-colors duration-100 ease-linear`}
       >
-        <GoogleAnalytics />
-        <GoogleAnalyticsEvent />
+        {/* <GoogleAnalytics />
+        <GoogleAnalyticsEvent /> */}
         <Header />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   )
