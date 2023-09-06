@@ -3,9 +3,6 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import GoogleAnalytics from './components/GoogleAnalytics'
-import { Suspense } from 'react'
-import GoogleAnalyticsEvent from './components/GoogleAnalyticsEvent'
 import { Analytics } from '@vercel/analytics/react'
 
 const inter = Inter({ subsets: ['latin'] })

@@ -1,5 +1,4 @@
 'use client'
-
 import { usePathname, useSearchParams } from 'next/navigation'
 import { Suspense, useEffect } from 'react'
 
