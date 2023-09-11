@@ -1,7 +1,7 @@
 # richipineda.dev
 
 
-Welcome to my personal website! This project serves as a showcase of my work, skills, and interests. It's built using a combination of modern web technologies and frameworks.
+This is my personal website!
 
 ## Table of Contents
 
