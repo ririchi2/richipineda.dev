@@ -1,6 +1,8 @@
 "use client"
 import { useState, useEffect } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
+import { PiSunFill, PiMoonFill } from 'react-icons/pi';
+
 
 const isDark = (): boolean =>
     (localStorage && localStorage.theme === 'dark') ||
@@ -41,7 +43,7 @@ const DarkModeToggle = () => {
                 exit={{ y: 20, opacity: 0 }}
                 transition={{ duration: 0.2 }}
             >
-                {isDarkMode ? '🌙' : '🌤️'}
+                {isDarkMode ? <PiMoonFill /> : <PiSunFill />}
             </motion.button>
         </AnimatePresence>
     )
