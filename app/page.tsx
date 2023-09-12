@@ -3,7 +3,7 @@ import Layout from './components/Layout'
 import Section from './components/Section'
 import { projects } from './data/projects'
 import ArticleCard from './components/ArticleCard'
-import { RxMagicWand } from 'react-icons/rx'
+import MagicWandIcon from './components/MagicWandIcon'
 
 
 const title = "Hello, I'm Ricardo"
@@ -20,7 +20,7 @@ export default function Home() {
         <p className="my-2">
           I spend most of my time as a frontend developer, but I also have experience with backend.
           Sometimes I use Node.js, Docker and Java and
-          I&apos;m currently learning some wizardry in TypeScript <span style={{display: "inline-block"}}><RxMagicWand /></span>.
+          I&apos;m currently learning some wizardry in TypeScript <MagicWandIcon />.
         </p>
         <p className="my-2">
           Outside of work I spend my time learning new techs as the industry never stops evolving,
