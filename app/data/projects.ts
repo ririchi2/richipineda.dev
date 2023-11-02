@@ -14,7 +14,7 @@ export const projects:
       description: 'Patientor is a TypeScript and Express-based medical record application designed to manage diagnoses and basic health information of patients.',
       coverImage: '',
       href: 'https://github.com/ririchi2/patientor-backend',
-      tags: ['TypeScript', 'Node.js', 'Express', 'uuid'],
+      tags: ['TypeScript', 'Node.js', 'Express', 'Jest', 'uuid'],
     },
     {
       title: 'Patientor Frontend',
