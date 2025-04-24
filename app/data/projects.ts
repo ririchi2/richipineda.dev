@@ -25,12 +25,11 @@ export const projects:
 
     },
     {
-      title: 'doIt - A To-Do List App',
-      description: 'doIt is a client-side, user-friendly To-Do List application designed to help you stay organized and on top of your tasks.',
+      title: 'Pomodoro App',
+      description: 'This is my own version of the Pomodoro app, a productivity tool that uses the Pomodoro Technique to help you manage your time effectively.',
       coverImage: '',
-      href: 'https://github.com/ririchi2/todo-app',
-      tags: ['React', 'TypeScript', 'Vite', 'Chakra UI', 'Framer Motion'],
-
+      href: 'https://github.com/ririchi2/pomodoro-watch',
+      tags: ['React', 'Typescript', 'Vite'],
     },
     {
       title: 'Markdown Editor',
@@ -47,11 +46,12 @@ export const projects:
       tags: ['Node.js', 'Express', 'MongoDB', 'JWT'],
     },
     {
-      title: 'Pomodoro App',
-      description: 'This is my own version of the Pomodoro app, a productivity tool that uses the Pomodoro Technique to help you manage your time effectively.',
+      title: 'doIt - A To-Do List App',
+      description: 'doIt is a client-side, user-friendly To-Do List application designed to help you stay organized and on top of your tasks.',
       coverImage: '',
-      href: 'https://github.com/ririchi2/pomodoro-watch',
-      tags: ['React', 'Typescript', 'Vite'],
+      href: 'https://github.com/ririchi2/todo-app',
+      tags: ['React', 'TypeScript', 'Vite', 'Chakra UI', 'Framer Motion'],
+
     },
   ];
 
