@@ -46,6 +46,13 @@ export const projects:
       href: 'https://github.com/fullstacktf/podcast-library-backend',
       tags: ['Node.js', 'Express', 'MongoDB', 'JWT'],
     },
+    {
+      title: 'Pomodoro App',
+      description: 'This is my own version of the Pomodoro app, a productivity tool that uses the Pomodoro Technique to help you manage your time effectively.',
+      coverImage: '',
+      href: 'https://github.com/ririchi2/pomodoro-watch',
+      tags: ['React', 'Typescript', 'Vite'],
+    },
   ];
 
 
